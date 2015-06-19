@@ -1,12 +1,13 @@
 require 'sinatra'
 
-# class EmailParseTest < Sinatra::Base
 
 get "/" do 
   erb :emailinput
 end
   
 post "/" do 
-  erb :parsedemail
+  if params[:file]
+    erb :parsedemail
+  end
 end
 
