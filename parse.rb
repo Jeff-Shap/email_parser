@@ -1,1 +1,7 @@
-parse.rb
+require 'sinatra'
+
+get "/" do 
+  erb :emailinput
+end
+  
+end
