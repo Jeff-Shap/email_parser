@@ -4,4 +4,3 @@ get "/" do
   erb :emailinput
 end
   
-end
