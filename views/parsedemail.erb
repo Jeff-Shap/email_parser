@@ -6,6 +6,9 @@
   td {
     vertical-align: text-top;
   }
+  th {
+    text-align: left;
+  }
 </style>
 
 
@@ -57,8 +60,8 @@
       <td> <%= "#{@email.subject}" %> </td>
     </tr>
     <tr>
-      <td> <%= "Body:" %> </td>
-      <td> <%= "#{@email.body[1]}" %> </td>
+      <td><br> <%= "Body:" %> </td>
+      <td><br> <%= "#{@email.body[1]}" %> </td>
     </tr>
   </tbody>
 </table>
