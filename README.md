@@ -6,7 +6,7 @@ Objective:
 	CSV, JSON, and VCF formats for quick Contact creation.
 
 To Do:
-	Style views
+	\nStyle views
 	Export conversions and options
 	MIME compatibilty
 
