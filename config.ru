@@ -1,2 +1,2 @@
-require './parse.rb'
-run EmailParseTest
+require './server.rb'
+run EmailParsePractical

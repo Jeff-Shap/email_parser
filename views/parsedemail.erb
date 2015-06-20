@@ -1,4 +1,65 @@
 <!-- parsedemail.erb -->
 
+
+<!-- GET RID OF STYLE TAGS BEFORE FINAL SUBMIT -->
+<style>
+  td {
+    vertical-align: text-top;
+  }
+</style>
+
+
 <h1> THIS IS THE PARSED INFO PAGE </h1>
-<%= params[:file] %>
+
+
+
+<table>
+  <tbody>
+    <tr>
+      <th colspan="2"> Sender(s) / Reciever(s) Info </th>
+    </tr>
+    <tr>
+      <td> <%= "To:" %> </td>
+      <td> <%= "#{@email.to}" %> </td>
+    </tr>
+    <tr>
+      <td> <%= "From:" %> </td>
+      <td> <%= "#{@email.from}" %> </td>
+    </tr>
+    <tr>
+      <td> <%= "CC:" %> </td>
+      <td> <%= "#{@email.cc}" %> </td>
+    </tr>
+    <tr>
+      <td> <%= "BCC:" %> </td>
+      <td> <%= "#{@email.bcc}" %> </td>
+    </tr>
+    <tr>
+      <td> <%= "Delivered To:" %> </td>
+      <td> <%= "#{@email.delivered_to}" %> </td>
+    </tr>
+    <tr>
+      <td> <%= "Return Path:" %> </td>
+      <td> <%= "#{@email.return_path}" %> </td>
+    </tr>
+    <tr>
+      <th colspan="2"> <br>Date / Time Info </th>
+    </tr>
+    <tr>
+      <td><%= "Date:" %></td>
+      <td><%= "#{@email.date}" %></td>
+    </tr>
+    <tr>
+      <th colspan="2"> <br>Content </th>
+    </tr>
+    <tr>
+      <td> <%= "Subject:" %> </td>
+      <td> <%= "#{@email.subject}" %> </td>
+    </tr>
+    <tr>
+      <td> <%= "Body:" %> </td>
+      <td> <%= "#{@email.body[1]}" %> </td>
+    </tr>
+  </tbody>
+</table>
+
